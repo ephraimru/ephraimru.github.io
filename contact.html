@@ -94,6 +94,8 @@
 
             <div class=" text-md-left">
                 <a class="btn btn-block btn-primary fs-5 p-2" onclick="whatsapp();">Send now</a>
+                                                                                   
+                <a class="btn btn-block btn-danger fs-5 p-2" onClick="clear();">Cancel</a>
             </div>
         </div>
         <!--Grid column-->
@@ -132,8 +134,8 @@
         });
     </script> 
    <script>
-               
-      function whatsapp(){
+
+function whatsapp(){
 var name = document.getElementById("name").value;
 var email = document.getElementById("email").value;
 var phone = document.getElementById("phone").value;
@@ -146,7 +148,18 @@ var url = "https://wa.me/+263713942973?text="
 +"*Message :* "+message;
 
 window.open(url,'_blank').focus();
-            
+}
+function clear(){
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var phone = document.getElementById("phone").value;
+var message = document.getElementById("message").value;
+name ="";
+email ="";
+phone ="";
+message="";
+
+}
   </script>
 </body>
 </html>
