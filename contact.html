@@ -22,20 +22,7 @@
         $.get("nav.html", function(data){
             $("#nav-placeholder").replaceWith(data);
         });
-      
-      function whatsapp(){
-var name = document.getElementById("name").value;
-var email = document.getElementById("email").value;
-var phone = document.getElementById("phone").value;
-var message = document.getElementById("message").value;
 
-var url = "https://wa.me/+263771662997?text="
-+"*Name :* "+name+"%0a"
-+"*Email :* "+email+"%0a"
-+"*Phone :* "+phone+"%0a"
-+"*Message :* "+message;
-
-window.open(url,'_blank').focus();
 }
 
     </script> 
@@ -144,5 +131,22 @@ window.open(url,'_blank').focus();
             $("#footer-placeholder").replaceWith(data);
         });
     </script> 
+   <script>
+               
+      function whatsapp(){
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var phone = document.getElementById("phone").value;
+var message = document.getElementById("message").value;
+
+var url = "https://wa.me/+263713942973?text="
++"*Name :* "+name+"%0a"
++"*Email :* "+email+"%0a"
++"*Phone :* "+phone+"%0a"
++"*Message :* "+message;
+
+window.open(url,'_blank').focus();
+            
+  </script>
 </body>
 </html>
