@@ -29,7 +29,7 @@ var email = document.getElementById("email").value;
 var phone = document.getElementById("phone").value;
 var message = document.getElementById("message").value;
 
-var url = "https://wa.me/yournumber?text="
+var url = "https://wa.me/+263771662997?text="
 +"*Name :* "+name+"%0a"
 +"*Email :* "+email+"%0a"
 +"*Phone :* "+phone+"%0a"
@@ -63,7 +63,7 @@ window.open(url,'_blank').focus();
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" placeholder="Fullname" class="form-control">
+                            <input type="text" id="name" name="name" placeholder="Fullname" class="form-control required">
                         </div>
                     </div>
                     <!--Grid column-->
@@ -71,7 +71,7 @@ window.open(url,'_blank').focus();
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" placeholder="Email address" class="form-control">
+                            <input type="text" id="email" name="email" placeholder="Email address" class="form-control required">
                         </div>
                     </div>
                     <!--Grid column-->
@@ -83,7 +83,7 @@ window.open(url,'_blank').focus();
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
+                            <input type="text" id="phone" name="subject" placeholder="Phone Number" class="form-control required">
                         </div>
                     </div>
                 </div><br>
@@ -96,7 +96,7 @@ window.open(url,'_blank').focus();
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" placeholder="Your Message Here" class="form-control md-textarea"></textarea>
+                            <textarea type="text" id="message" name="message" rows="2" placeholder="Your Message Here" class="form-control md-textarea required"></textarea>
                         </div>
 
                     </div>
