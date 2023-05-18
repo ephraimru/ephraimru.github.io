@@ -25,6 +25,7 @@ $mail->addAddress($_POST["email"]);
 
 $mail->isHTML(true);
 
+$mail->name = $_POST["name"];
 $mail->Subject = $_POST["subject"];
 $mail->Body = $_POST["message"];
 
